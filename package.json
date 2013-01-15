@@ -1,0 +1,19 @@
+{
+  "name": "lexich.ru",
+  "description": "lexich.ru",
+  "version": "0.0.1",
+  "author": {
+    "name": "lexich"
+  },  
+  "homepage": "lexich.ru",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "dependencies": {
+    "bower":"*",
+    "jade":"*",
+    "markdown-js":"*",
+    "grunt-jade":"*"
+  },
+  "readme": "README.md"
+}
