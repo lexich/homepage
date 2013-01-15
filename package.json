@@ -13,7 +13,10 @@
     "bower":"*",
     "jade":"*",
     "markdown-js":"*",
-    "grunt-jade":"*"
+    "grunt-jade":"*",
+    "grunt-cp":"*",
+    "grunt-clean":"*",
+    "grunt-connect":"*"
   },
   "readme": "README.md"
 }
