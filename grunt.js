@@ -24,8 +24,21 @@ module.exports = function (grunt) {
         port: 8080,
         base: './www'
       }
+    },
+    watch:{
+      jade_files:{
+        files:"templates/*.jade",
+        tasks:["jade"]
+      },
+      jade_templates:{
+        files:"templates/**/*.jade",
+        tasks:["jade"]
+      },
+      css:{
+        files:"static/css/*.css",
+        tasks:["cp"]
+      }
     }
-
   });
   grunt.registerTask('default',"clean jade cp");
 

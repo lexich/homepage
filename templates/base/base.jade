@@ -32,13 +32,30 @@ html(class="no-js", lang="ru")
     link(rel="shortcut icon", href="static/img/favicon.ico")
 
     link(rel="stylesheet", href="static/css/style.css")
-
-    //[if (lt IE 9) & (!IEMobile)]
-    link(rel="stylesheet", href="static/css/ie.css")
-    //<![endif]    
+    link(rel="stylesheet", href="static/grands/style.css")
+    
+    //if (lt IE 9) & (!IEMobile)
+      link(rel="stylesheet", href="static/css/ie.css")
+    
+    //if lte IE 7]>
+      script(src="static/grands/lte-ie7.js")    
   body
-    h1 Jade - node template engine
-    #container
-      block content
+    menu.menu
+      nav
+        li
+          a.menu__link(href="#",title="Главная") Главная
+        li 
+          a.menu__link(href="#",title="Портфолио") Портфолио        
+    header.background
+      .background__separator.background__separator-top
+      h1 #{header_title}
+      nav.header__link
+        li.fs1(data-icon="\e000;") @
+          
+          
+      .background__separator.background__separator-bottom  
+
+    article.article
+      block content      
     script(src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js")
     script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js")
