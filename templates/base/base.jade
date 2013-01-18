@@ -49,44 +49,22 @@ html(class="no-js", lang="ru")
     .header__separator.header__separator-top
     header.header      
       .header__text
-        h1 #{header_title}
-      .header__link
-        nav
-          li
-            a.header__link-icon.icon-Email(href="#")
-          li
-            a.header__link-icon.icon-VK(href="#")
-          li
-            a.header__link-icon.icon-Linked-in(href="#")
-          li
-            a.header__link-icon.icon-GitHub-circle(href="#")
-          li          
-            a.header__link-icon.icon-twitter(href="#")
-          li
-            a.header__link-icon.icon-MoiKrug(href="#")
-          li
-            a.header__link-icon.icon-facebook(href="#")
+        h1 #{header_title} 
+      .header__link     
+        nav  
+          each item in header__link
+            li 
+              a.header__link-icon(href=item.href,title=item.title,class=item.class)                
+
     .header__separator.header__separator-bottom  
     block article
     article.article
       section.article__content
         block content
-          p addddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-          p addddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-          p addddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-          p addddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-          p addddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-          p addddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-          p addddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-          p addddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+          include _fill
       section.article__navigation
         block navigation
-        p adddddddddddddddd dddddddddddddddddddddddd ddddddddddddddddddddddddddd dddddddddddddd
-        p addddddddddddddddddd dddddddddddddddddddddddddddddddddddddddd dddddddddddddddddddddd
-        p addddddddddddddddddddddddd ddddddddddddddddddddddddddddddddddd ddddddddddddddddddddd
-        p adddddddddddddddddddddddddddddd dddddddddddddddddddddddddddd ddddddddddddddddddddddd
-      
-      
+          include _fill      
       
     script(src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js")
     script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js")

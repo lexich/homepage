@@ -40,8 +40,7 @@ module.exports = function (grunt) {
       }
     }
   });
-  grunt.registerTask('default',"clean jade cp");
-
+  grunt.registerTask('default',"clean jade cp watch");  
   grunt.loadNpmTasks('grunt-jade');
   grunt.loadNpmTasks('grunt-cp');
   grunt.loadNpmTasks('grunt-clean');
