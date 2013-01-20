@@ -10,10 +10,14 @@ module.exports = function (grunt) {
         }
       }
     },
-    cp: {
-      media: {
-        src: 'static',
-        dest: 'www/static'
+    copy: {
+      dist : {
+        files: {
+          'www/static/':'static/**',
+          'www/static/css/':[
+            "components/bootstrap/docs/assets/css/bootstrap-responsive.css"
+          ]
+        }
       }
     },
     clean:{
@@ -40,9 +44,9 @@ module.exports = function (grunt) {
       }
     }
   });
-  grunt.registerTask('default',"clean jade cp watch");  
+  grunt.registerTask('default',"clean jade copy watch");
   grunt.loadNpmTasks('grunt-jade');
-  grunt.loadNpmTasks('grunt-cp');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-clean');
   grunt.loadNpmTasks('grunt-connect');
 }
