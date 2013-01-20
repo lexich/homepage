@@ -50,6 +50,7 @@ module.exports = function (grunt) {
     }
   });
   grunt.registerTask('default',"clean jade copy watch");
+  grunt.registerTask('open',"clean jade copy connect");
   grunt.loadNpmTasks('grunt-jade');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-clean');

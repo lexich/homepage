@@ -9,8 +9,10 @@ need to install [nodejs 0.8](http://nodejs.org/)
 
 > node_modules/.bin/bower install
 
-> node_modules/.bin/grunt
+> node_modules/.bin/grunt open
 
-> node_modules/.bin/grunt connect
+
+Or the same in one line
+> git clone git://github.com/lexich/homepage.git homepage && cd homepage && npm install && node_modules/.bin/bower install && node_modules/.bin/grunt open
 
 open browser localhost:8080
