@@ -77,23 +77,19 @@ a.menu__link{
 a.menu__link:hover{
 	background: #ffcc66;
 }
-.article{
-	float: left;
-	text-align: left;
-	width: 100%;
+.article{	
+	margin: auto;
+}
+
+.article__content{			
 	overflow: hidden;
 }
 
-.article__content{
-	float: left;
-	width: 65%;
-	overflow: hidden;	
-	display: inline;
-	padding: 10px;
+.article__navigation{		
+	overflow: hidden;
 }
 
-.article__navigation{
-	width: 30%;
-	float: left;
-	padding: 10px;	
+.avatar{
+	float: right;
+	padding: 10px;
 }

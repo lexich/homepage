@@ -11,9 +11,13 @@ module.exports = function (grunt) {
       }
     },
     copy: {
+      user : {
+        files:{
+          'www/static/':'static/**'
+        }
+      },
       dist : {
-        files: {
-          'www/static/':'static/**',
+        files: {          
           'www/static/css/':[
             "components/bootstrap/docs/assets/css/bootstrap-responsive.css"
           ],
@@ -45,7 +49,7 @@ module.exports = function (grunt) {
       },
       css:{
         files:"static/css/*.css",
-        tasks:["cp"]
+        tasks:["copy:user"]
       }
     }
   });
