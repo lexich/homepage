@@ -4,6 +4,7 @@
   
   "dependencies": {
     "jquery": "~1.8.0",
-    "bootstrap": "~2.2.0"
+    "bootstrap": "~2.2.0",
+    "grands":"git://github.com/Grawl/Grands.git"
   }
 }

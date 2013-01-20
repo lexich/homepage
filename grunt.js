@@ -16,7 +16,12 @@ module.exports = function (grunt) {
           'www/static/':'static/**',
           'www/static/css/':[
             "components/bootstrap/docs/assets/css/bootstrap-responsive.css"
-          ]
+          ],
+          'www/static/grands/':[
+            "components/grands/Grands-icon-font/*.css",
+            "components/grands/Grands-icon-font/*.js"            
+          ],
+          'www/static/grands/fonts/':"components/grands/Grands-icon-font/fonts/*"
         }
       }
     },
